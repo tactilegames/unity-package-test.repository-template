@@ -1,0 +1,22 @@
+{
+    "displayName": "TEMPLATE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tactilegames/TEMPLATE.git"
+    },
+    "description": "TODO",
+    "name": "com.tactilegames.TEMPLATE",
+    "author": {
+        "name": "Tactile Games",
+        "url": "https://github.com/tactilegames"
+    },
+    "homepage": "https://github.com/tactilegames/TEMPLATE",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@tactilegames"
+    },
+    "dependencies": {
+       
+    },
+    "unity": "2019.4",
+    "version": "1.0.0"
+}

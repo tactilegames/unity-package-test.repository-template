@@ -1,0 +1,15 @@
+{
+    "overrideReferences": false,
+    "noEngineReferences": false,
+    "autoReferenced": true,
+    "name": "com.tactilegames.TEMPLATE",
+    "allowUnsafeContext": false,
+    "defineConstraints": [],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "references": [
+        
+    ],
+    "excludePlatforms": [],
+    "precompiledReferences": []
+}

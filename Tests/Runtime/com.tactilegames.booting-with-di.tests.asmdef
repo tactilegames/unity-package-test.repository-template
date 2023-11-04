@@ -1,0 +1,24 @@
+{
+    "overrideReferences": true,
+    "noEngineReferences": false,
+    "autoReferenced": false,
+    "name": "com.tactilegames.TEMPLATE.tests",
+    "allowUnsafeContext": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "references": [
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "com.tactilegames.TEMPLATE"
+    ],
+    "excludePlatforms": [],
+    "precompiledReferences": [
+        "nunit.framework.dll",
+        "NSubstitute.dll"
+    ]
+}

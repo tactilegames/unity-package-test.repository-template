@@ -1,0 +1,17 @@
+{
+    "overrideReferences": false,
+    "noEngineReferences": false,
+    "autoReferenced": true,
+    "name": "com.tactilegames.TEMPLATE.editor",
+    "allowUnsafeContext": false,
+    "defineConstraints": [],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "references": [
+        "com.tactilegames.TEMPLATE"
+    ],
+    "excludePlatforms": [],
+    "precompiledReferences": []
+}
