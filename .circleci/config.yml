@@ -16,7 +16,7 @@ all-unity-versions: &all-unity-versions [
 
 workflows:
   version: 2
-  
+
   verify-development-commit:
     jobs:
       - commit-validation:
@@ -35,9 +35,40 @@ workflows:
           filters:
             branches:
               only: ["master"]
+  
+  build-and-deploy-prototype:
+    jobs:
+      - publish-prototype:
+          context:
+            - CLIENT_PACKAGES
+          filters:
+            tags:
+              only: /^v0+(\.[0-9]+)*$/
+            branches:
+              ignore: /.*/
 
 jobs:
- 
+  publish-prototype:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: Install jq
+          command: |
+            sudo apt-get update
+            sudo apt-get install jq
+      - run:
+          name: Create configuration file for NPM to publish packages with
+          command: |
+            echo //npm.pkg.github.com/:_authToken=$GITHUB_OAUTH_TOKEN > ~/project/.npmrc
+            echo @tactilegames:registry=https://npm.pkg.github.com >> ~/project/.npmrc          
+      - run:
+          name: 'Update package.json and npm publish'
+          command: |
+            jq -r ".version |= \"$(echo $CIRCLE_TAG | cut -c 2-)\"" package.json > temp.json && mv temp.json package.json # updates the version in package.json based on the tag.
+            npm publish --tag prototype # publish the package to npm
+
   commit-validation:
     executor: unity-<<parameters.platform>>-<<parameters.unity-version>>
 
