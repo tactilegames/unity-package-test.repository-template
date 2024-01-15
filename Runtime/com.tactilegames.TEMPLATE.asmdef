@@ -2,7 +2,7 @@
     "overrideReferences": false,
     "noEngineReferences": false,
     "autoReferenced": true,
-    "name": "com.tactilegames.TEMPLATE",
+    "name": "com.tactilegames.PACKAGE_NAME",
     "allowUnsafeContext": false,
     "defineConstraints": [],
     "optionalUnityReferences": [],

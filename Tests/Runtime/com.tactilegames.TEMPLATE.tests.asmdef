@@ -2,7 +2,7 @@
     "overrideReferences": true,
     "noEngineReferences": false,
     "autoReferenced": false,
-    "name": "com.tactilegames.TEMPLATE.tests",
+    "name": "com.tactilegames.PACKAGE_NAME.tests",
     "allowUnsafeContext": false,
     "defineConstraints": [
         "UNITY_INCLUDE_TESTS"
@@ -14,7 +14,7 @@
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "com.tactilegames.TEMPLATE"
+        "com.tactilegames.PACKAGE_NAME"
     ],
     "excludePlatforms": [],
     "precompiledReferences": [

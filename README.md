@@ -1,1 +1,1 @@
-# com.tactilegames.TEMPLATE
+# com.tactilegames.PACKAGE_NAME

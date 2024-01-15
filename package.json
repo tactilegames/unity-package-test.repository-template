@@ -1,16 +1,16 @@
 {
-    "displayName": "DEFAULT_DISPLAY_NAME",
+    "displayName": "DISPLAY_NAME",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tactilegames/TEMPLATE.git"
+        "url": "https://github.com/tactilegames/PACKAGE_NAME.git"
     },
     "description": "TODO",
-    "name": "com.tactilegames.TEMPLATE",
+    "name": "com.tactilegames.PACKAGE_NAME",
     "author": {
         "name": "Tactile Games",
         "url": "https://github.com/tactilegames"
     },
-    "homepage": "https://github.com/tactilegames/TEMPLATE",
+    "homepage": "https://github.com/tactilegames/PACKAGE_NAME",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@tactilegames"
     },
