@@ -1,17 +1,17 @@
 {
-    "overrideReferences": false,
-    "noEngineReferences": false,
-    "autoReferenced": true,
-    "name": "com.tactilegames.PACKAGE_NAME.editor",
-    "allowUnsafeContext": false,
-    "defineConstraints": [],
-    "optionalUnityReferences": [],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "references": [
-        "com.tactilegames.PACKAGE_NAME"
-    ],
-    "excludePlatforms": [],
-    "precompiledReferences": []
+  "overrideReferences": false,
+  "noEngineReferences": false,
+  "autoReferenced": true,
+  "name": "com.tactilegames.PACKAGE_NAME.editor",
+  "allowUnsafeContext": false,
+  "defineConstraints": [],
+  "optionalUnityReferences": [],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "references": [
+    "com.tactilegames.PACKAGE_NAME"
+  ],
+  "excludePlatforms": [],
+  "precompiledReferences": []
 }
