@@ -1,0 +1,66 @@
+# These settings are synced to GitHub by https://probot.github.io/apps/settings/
+
+repository:
+  # See https://docs.github.com/en/rest/reference/repos#update-a-repository for all available settings.
+
+  # Updates the default branch for this repository.
+  default_branch: master
+  
+  # Either `true` to make the repository private, or `false` to make it public.
+  private: false
+
+  # Either `true` to enable issues for this repository, `false` to disable them.
+  has_issues: true
+
+  # Either `true` to enable the wiki for this repository, `false` to disable it.
+  has_wiki: true
+
+  # Either `true` to enable downloads for this repository, `false` to disable them.
+  has_downloads: true
+
+  # Either `true` to allow squash-merging pull requests, or `false` to prevent squash-merging.
+  allow_squash_merge: true
+
+  # Either `true` to allow merging pull requests with a merge commit, or `false` to prevent merge commits.
+  allow_merge_commit: false
+
+  # Either `true` to allow rebase-merging pull requests, or `false` to prevent rebase-merging.
+  allow_rebase_merge: false
+
+  # The commit title and body for squash merge commits.
+  squash_merge_commit_title: PR_TITLE
+  squash_merge_commit_message: PR_BODY
+
+# Collaborators: give specific users access to this repository.
+collaborators:
+  # The username of the collaborator and their permission level
+  - username: developers
+    permission: maintain
+
+branches:
+  - name: master
+    # Branch protection settings. Set to null to disable
+    protection:
+      # Require at least one approving review on a pull request before merging.
+      required_pull_request_reviews:
+        # The number of approvals required. (1-6)
+        required_approving_review_count: 1
+        # Dismiss approved reviews automatically when a new commit is pushed.
+        dismiss_stale_reviews: true
+      # Require status checks to pass before merging.
+      required_status_checks:
+        # Require branches to be up to date before merging.
+        strict: true
+        # The list of status checks to require in order to merge into this branch.
+        contexts:
+          - verify-development-commit
+          - Semantic Release PR validation
+      # Enforce all configured restrictions for administrators. Set to true to enforce, null to disable.
+      enforce_admins: null
+      # Prevent merge commits from being pushed to matching branches
+      required_linear_history: true
+      # Restrict who can push to this branch.
+      restrictions:
+        users: []
+        teams:
+          - developers
