@@ -36,3 +36,8 @@ collaborators:
   # The username of the collaborator and their permission level
   - username: developers
     permission: maintain
+
+branches:
+  - name: master
+    # Branch Protection settings. Set to null to disable
+    protection: null
